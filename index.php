@@ -19,12 +19,15 @@ $APPLICATION->SetTitle("Мебельная компания");
 <h3>Наши услуги</h3>
 <?$APPLICATION->IncludeComponent("bitrix:furniture.catalog.index", "", array(
 	"IBLOCK_TYPE" => "products",
-	"IBLOCK_ID" => "3",
-	"IBLOCK_BINDING" => "element",
-	"CACHE_TYPE" => "A",
-	"CACHE_TIME" => "36000000",
-	"CACHE_GROUPS" => "N"
+		"IBLOCK_ID" => "3",
+		"IBLOCK_BINDING" => "element",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_GROUPS" => "N"
 	),
-	false
+	false,
+	array(
+	"ACTIVE_COMPONENT" => "N"
+	)
 );?>
 </p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
