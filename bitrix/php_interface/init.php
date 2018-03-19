@@ -1,5 +1,5 @@
 <?
-function dump($var, $die = false, $all = false)
+function debug($var, $die = false, $all = false)
 {
     global $USER;
     if( ($USER->GetID() == 1) || ($all == true))
@@ -14,4 +14,7 @@ function dump($var, $die = false, $all = false)
         die;
     }
 }
+
+
+
 ?>
